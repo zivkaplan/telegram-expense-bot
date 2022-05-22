@@ -12,6 +12,6 @@ bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler()
 def SendPhoto(message):
-        bot.send_photo(message.chat.id, open("src/ziv.jpg","rb"))
+        bot.send_photo(message.chat.id, open("ziv.jpg","rb"))
 
 bot.polling()
